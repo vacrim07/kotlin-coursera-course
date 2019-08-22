@@ -22,6 +22,8 @@ package com.vappz.src.secondweek
     println(list)
 }*/
 
+// Testing named parameters
+/*
 fun main(){
     println(listOf('a','b','c')
         .joinToString(
@@ -30,4 +32,46 @@ fun main(){
             separator = ""
 
         ))
+}*/
+
+// Testing function setOf(), switch the colors order!
+/*
+fun main() {
+    val colorOne = Color.RED
+    val colorTwo = Color.ORANGE
+    when (setOf(colorOne, colorTwo)) {
+        setOf(Color.BLUE, Color.RED) -> println("Violet")
+        setOf(Color.ORANGE, Color.BLUE) -> println("Opposite colors")
+        else -> throw Exception("Mix not defined")
+    }
+}*/
+
+// Testing smart cast, switch the return value of getFavouritePet()
+/*
+fun main(){
+    when (val pet = Pet().getFavouritePet()) {
+        is Cat -> pet.meow()
+        is Dog -> pet.woof()
+        else -> throw Exception("Pet not defined")
+    }
+}*/
+
+// Testing iteration over a map
+/*
+fun main(){
+    val map = mapOf(
+        1 to "one",
+        2 to "two",
+        3 to "three"
+    )
+    for ((key, value) in map){
+        println("$key = $value")
+    }
+}*/
+
+// Testing for loop
+fun main(){
+    for (i in 9 downTo 2 step 3){
+        println(i)
+    }
 }
