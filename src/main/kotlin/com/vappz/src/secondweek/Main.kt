@@ -70,8 +70,19 @@ fun main(){
 }*/
 
 // Testing for loop
-fun main(){
+/*fun main(){
     for (i in 9 downTo 2 step 3){
         println(i)
     }
+}*/
+
+// Testing ranges
+fun main(){
+    fun isLetter(c: Char) = c in 'a'..'z' || ('A' <= c && c <= 'Z')
+    println(isLetter('3'))
+    fun isNotDigit(c: Char) = c !in '0'..'9'
+    println(isNotDigit('*'))
+    fun isInTheRange(s: String) = s in "Java".."Scala"
+    println(isInTheRange("kotlin"))
+    println("_Kotlin".take(1) == "_")
 }
