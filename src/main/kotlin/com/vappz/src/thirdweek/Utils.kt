@@ -5,3 +5,5 @@ package com.vappz.src.thirdweek
 
 // Short assignment
 fun String.lastChar() = get(length -1)
+
+fun String.get(index: Int) = "*"
