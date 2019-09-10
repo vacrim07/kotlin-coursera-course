@@ -1,4 +1,4 @@
-package com.vappz.src.thirdweek
+package com.vappz.src.secondweek.extensionfunctions
 
 class ExtensionFunctions {
 
